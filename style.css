@@ -220,6 +220,16 @@ h2 {
     }
 }
 
+@keyframes slide-mob {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
 
 @media  screen and (max-width: 375px) {
     .cyan-bg {
@@ -273,6 +283,13 @@ h2 {
         flex-direction: column;
         text-align: center;
         flex: 1fr 1fr;
+    }
+
+    .hero {
+        width: 100%;
+        animation-name: slide-mob;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
     }
 
     .reverse {
